@@ -79,11 +79,11 @@ class EventsController < ApplicationController
     @event = result.event
 
     flash[:notice] = result.notice if result.notice
-    if result.render
-      render result.render
-    else
+    #if result.render
+    #  render result.render
+    #else
       redirect_to result.event
-    end
+    #end
   end
 
   def update
